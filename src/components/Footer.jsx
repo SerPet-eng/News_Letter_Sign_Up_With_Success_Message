@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <div className="attribution">
+      <footer className="attribution">
         <small>
           <a
             href="https://www.frontendmentor.io?ref=challenge"
@@ -12,7 +12,7 @@ export default function Footer() {
           </a>{' '}
           Challenge by . Coded by <a href="#">Your Name Here</a>.
         </small>
-      </div>
+      </footer>
     </>
   );
 }
