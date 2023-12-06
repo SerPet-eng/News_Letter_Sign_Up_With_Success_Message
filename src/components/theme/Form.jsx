@@ -2,7 +2,7 @@ export default function Form() {
   return (
     <>
       <form className="form">
-        <h3 className="form__title">Email address</h3>
+        <p className="form__title">Email address</p>
         <input
           type="text"
           placeholder="email@company.com"

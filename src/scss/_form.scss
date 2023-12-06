@@ -1,0 +1,26 @@
+@use './variables/variable.scss' as *;
+
+.form {
+  display: grid;
+  gap: 0.9rem;
+  padding: 1rem;
+  .form__title {
+    font-size: 0.75rem;
+    font-weight: $fontWeight-700;
+    font-family: $fontFamily_Bold;
+  }
+  .form__input {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid $color-Neutral-400;
+  }
+  .form__button {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: $color-Neutral-900;
+    font-family: $fontFamily_Bold;
+    font-weight: $fontWeight-700;
+    color: $color-Neutral-100;
+  }
+}
