@@ -1,6 +1,13 @@
 @use './variables/variable.scss' as *;
 
 body {
-  background-color: $color-Neutral-400;
-  color: white;
+  background-color: $color-Neutral-100;
+  font-family: $fontFamily_Regular;
+  font-weight: $fontWeight-400;
+  font-size: 0.875rem;
+  color: $color-Neutral-900;
+
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
 }

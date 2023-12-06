@@ -10,8 +10,14 @@
 }
 /** ----- FONT_WEIGHT ----- **/
 body {
-  background-color: hsl(231, 7%, 60%);
-  color: white;
+  background-color: hsl(0, 0%, 100%);
+  font-family: "Roboto_Regular";
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: hsl(234, 29%, 20%);
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
 }
 
 /*
