@@ -13,11 +13,45 @@ body {
   background-color: hsl(0, 0%, 100%);
   font-family: "Roboto_Regular";
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: hsl(234, 29%, 20%);
   display: grid;
   min-height: 100vh;
   place-content: center;
+}
+
+/** ----- COLORS ----- **/
+/** ----- FONT_FAMILY ----- **/
+@font-face {
+  font-family: "Roboto_Bold";
+  src: url("../../assets/fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto_Regular";
+  src: url("../../assets/fonts/Roboto-Regular.ttf");
+}
+/** ----- FONT_WEIGHT ----- **/
+.app {
+  border: 3px solid red;
+}
+.app .app__content {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem 2.5rem 1.5rem 1.5rem;
+}
+.app .app__content .app__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Roboto_Bold";
+}
+.app .app__content .app__description {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.app .app__content .app__description li {
+  list-style-image: url("../../assets/images/icon-list.svg");
+  padding-left: 1rem;
 }
 
 /*

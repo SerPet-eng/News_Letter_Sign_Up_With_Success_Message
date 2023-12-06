@@ -1,14 +1,17 @@
 export default function Content() {
   return (
     <>
-      <h1 className="app__title">Stay updated!</h1>
-      <h2 className="app__sub-title">
-        Join 60,000+ product managers receiving monthly updates on:
-      </h2>
-      <p className="app__description">
-        Product discovery and building what matters Measuring to ensure updates
-        are a success And much more!
-      </p>
+      <div className="app__content">
+        <h1 className="app__title">Stay updated!</h1>
+        <p className="app__sub-title">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul className="app__description">
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+      </div>
     </>
   );
 }

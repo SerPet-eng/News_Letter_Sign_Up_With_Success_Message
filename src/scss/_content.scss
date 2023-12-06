@@ -1,0 +1,26 @@
+@use './variables/variable.scss' as *;
+
+.app {
+  border: 3px solid red;
+  .app__content {
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem 2.5rem 1.5rem 1.5rem;
+    .app__title {
+      font-size: 2.5rem;
+      font-weight: $fontWeight-700;
+      font-family: $fontFamily_Bold;
+    }
+
+    .app__description {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+
+      li {
+        list-style-image: url('../../assets/images/icon-list.svg');
+        padding-left: 1rem;
+      }
+    }
+  }
+}
