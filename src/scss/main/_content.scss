@@ -1,7 +1,6 @@
 @use './variables/variable.scss' as *;
 
 .app {
-  border: 3px solid red;
   .app__content {
     display: grid;
     gap: 1rem;

@@ -31,9 +31,6 @@ body {
   src: url("../../assets/fonts/Roboto-Regular.ttf");
 }
 /** ----- FONT_WEIGHT ----- **/
-.app {
-  border: 3px solid red;
-}
 .app .app__content {
   display: grid;
   gap: 1rem;
@@ -88,6 +85,14 @@ body {
   font-family: "Roboto_Bold";
   font-weight: 700;
   color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 /*
