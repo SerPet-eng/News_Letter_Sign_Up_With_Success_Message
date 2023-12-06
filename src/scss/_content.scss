@@ -14,12 +14,12 @@
 
     .app__description {
       display: flex;
+      flex-direction: column;
       gap: 1rem;
-      flex-wrap: wrap;
 
       li {
         list-style-image: url('../../assets/images/icon-list.svg');
-        padding-left: 1rem;
+        padding-left: 0.5rem;
       }
     }
   }
