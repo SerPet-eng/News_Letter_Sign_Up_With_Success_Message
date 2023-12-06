@@ -1,4 +1,4 @@
-@use './variables/variable.scss' as *;
+@use '../variables/variable.scss' as *;
 
 .form {
   display: grid;
@@ -18,14 +18,16 @@
     padding: 1rem;
     border-radius: 0.5rem;
     border: none;
-    background-color: $color-Neutral-900;
+    background: $color-Neutral-900;
     font-family: $fontFamily_Bold;
     font-weight: $fontWeight-700;
     color: $color-Neutral-100;
-    //! Needs to be resolve "HOVER"
-    // &:hover {
-    //   cursor: pointer;
-    //   background-color: red;
-    // }
+    &:hover {
+      cursor: pointer;
+      background: $color-Linear-Gradient-900;
+    }
+    &:focus {
+      background: $color-Linear-Gradient-900;
+    }
   }
 }

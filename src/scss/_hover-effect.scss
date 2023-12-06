@@ -1,9 +1,0 @@
-@use './variables/variable.scss' as *;
-
-.form {
-  .form__button {
-    &:hover {
-      background-color: $color-Linear-Gradient-900;
-    }
-  }
-}

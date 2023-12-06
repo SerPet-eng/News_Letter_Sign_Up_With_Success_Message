@@ -51,42 +51,6 @@ body {
   padding-left: 0.5rem;
 }
 
-/** ----- COLORS ----- **/
-/** ----- FONT_FAMILY ----- **/
-@font-face {
-  font-family: "Roboto_Bold";
-  src: url("../../assets/fonts/Roboto-Bold.ttf");
-}
-@font-face {
-  font-family: "Roboto_Regular";
-  src: url("../../assets/fonts/Roboto-Regular.ttf");
-}
-/** ----- FONT_WEIGHT ----- **/
-.form {
-  display: grid;
-  gap: 0.9rem;
-  padding: 1rem;
-}
-.form .form__title {
-  font-size: 0.75rem;
-  font-weight: 700;
-  font-family: "Roboto_Bold";
-}
-.form .form__input {
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid hsl(231, 7%, 60%);
-}
-.form .form__button {
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: none;
-  background-color: hsl(234, 29%, 20%);
-  font-family: "Roboto_Bold";
-  font-weight: 700;
-  color: hsl(0, 0%, 100%);
-}
-
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -162,4 +126,47 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/** ----- COLORS ----- **/
+/** ----- FONT_FAMILY ----- **/
+@font-face {
+  font-family: "Roboto_Bold";
+  src: url("../../assets/fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto_Regular";
+  src: url("../../assets/fonts/Roboto-Regular.ttf");
+}
+/** ----- FONT_WEIGHT ----- **/
+.form {
+  display: grid;
+  gap: 0.9rem;
+  padding: 1rem;
+}
+.form .form__title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: "Roboto_Bold";
+}
+.form .form__input {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid hsl(231, 7%, 60%);
+}
+.form .form__button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: hsl(234, 29%, 20%);
+  font-family: "Roboto_Bold";
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+.form .form__button:hover {
+  cursor: pointer;
+  background: linear-gradient(45deg, hsl(4, 84%, 59%) 90%, hsl(4, 100%, 67%));
+}
+.form .form__button:focus {
+  background: linear-gradient(45deg, hsl(4, 84%, 59%) 90%, hsl(4, 100%, 67%));
 }/*# sourceMappingURL=style.css.map */

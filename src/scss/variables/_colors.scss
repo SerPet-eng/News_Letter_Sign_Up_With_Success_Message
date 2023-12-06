@@ -1,7 +1,12 @@
 /** ----- COLORS ----- **/
 $color-Primary-900: hsl(4, 100%, 67%);
+$color-Primary-800: hsl(4, 84%, 59%);
 $color-Neutral-900: hsl(234, 29%, 20%);
 $color-Neutral-700: hsl(235, 18%, 26%);
 $color-Neutral-400: hsl(231, 7%, 60%);
 $color-Neutral-100: hsl(0, 0%, 100%);
-$color-Linear-Gradient-900: white;
+$color-Linear-Gradient-900: linear-gradient(
+  45deg,
+  $color-Primary-800 90%,
+  $color-Primary-900
+);
