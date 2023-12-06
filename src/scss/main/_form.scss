@@ -22,5 +22,10 @@
     font-family: $fontFamily_Bold;
     font-weight: $fontWeight-700;
     color: $color-Neutral-100;
+    //! Needs to be resolve "HOVER"
+    // &:hover {
+    //   cursor: pointer;
+    //   background-color: red;
+    // }
   }
 }
