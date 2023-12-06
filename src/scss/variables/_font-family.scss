@@ -1,10 +1,3 @@
-/** ----- COLORS ----- **/
-$color-Primary-900: hsl(4, 100%, 67%);
-$color-Neutral-900: hsl(234, 29%, 20%);
-$color-Neutral-700: hsl(235, 18%, 26%);
-$color-Neutral-400: hsl(231, 7%, 60%);
-$color-Neutral-100: hsl(0, 0%, 100%);
-
 /** ----- FONT_FAMILY ----- **/
 @font-face {
   font-family: 'Roboto_Bold';
@@ -18,7 +11,3 @@ $color-Neutral-100: hsl(0, 0%, 100%);
 
 $fontFamily_Bold: 'Roboto_Bold';
 $fontFamily_Regular: 'Roboto_Regular';
-
-/** ----- FONT_WEIGHT ----- **/
-$fontWeight-400: 400;
-$fontWeight-700: 700;

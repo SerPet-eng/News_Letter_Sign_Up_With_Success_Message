@@ -1,0 +1,6 @@
+@use './variables/variable.scss' as *;
+
+body {
+  background-color: $color-Neutral-400;
+  color: white;
+}
