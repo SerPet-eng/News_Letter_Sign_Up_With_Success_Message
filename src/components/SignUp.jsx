@@ -7,8 +7,10 @@ export default function SignUp() {
     <>
       <article className="app">
         <Image />
-        <Content />
-        <Form />
+        <section className="content">
+          <Content />
+          <Form />
+        </section>
       </article>
     </>
   );
