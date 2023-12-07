@@ -22,12 +22,16 @@
     font-family: $fontFamily_Bold;
     font-weight: $fontWeight-700;
     color: $color-Neutral-100;
+    transition: box-shadow 0.3s ease-in-out;
     &:hover {
       cursor: pointer;
-      background: $color-Linear-Gradient-900;
+      box-shadow: $color-Hover-900;
     }
     &:focus {
-      background: $color-Linear-Gradient-900;
+      box-shadow: $color-Hover-900;
+    }
+    &:active {
+      background: $color-Linear-Gradient-active-900;
     }
   }
 }

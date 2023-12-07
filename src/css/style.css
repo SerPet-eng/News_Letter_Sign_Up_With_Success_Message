@@ -162,11 +162,15 @@ h6 {
   font-family: "Roboto_Bold";
   font-weight: 700;
   color: hsl(0, 0%, 100%);
+  transition: box-shadow 0.3s ease-in-out;
 }
 .form .form__button:hover {
   cursor: pointer;
-  background: linear-gradient(45deg, hsl(4, 84%, 59%) 90%, hsl(4, 100%, 67%));
+  box-shadow: 0 0 5px 5px hsl(231, 7%, 60%);
 }
 .form .form__button:focus {
+  box-shadow: 0 0 5px 5px hsl(231, 7%, 60%);
+}
+.form .form__button:active {
   background: linear-gradient(45deg, hsl(4, 84%, 59%) 90%, hsl(4, 100%, 67%));
 }/*# sourceMappingURL=style.css.map */
