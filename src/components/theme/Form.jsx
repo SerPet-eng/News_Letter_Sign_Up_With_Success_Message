@@ -21,14 +21,14 @@ export default function Form() {
       <form className="form">
         <div className="form__placeholder">
           <p className="form__title">Email address</p>
-          {error && <small className="form__error">{error}</small>}
+          {error && <small className="error">{error}</small>}
         </div>
         <input
           type="email"
           value={value}
           placeholder="email@company.com"
           onChange={(e) => setValue(e.target.value)}
-          className="form__input"
+          className={`form__input ${error ? 'form__error' : ''}`}
         />
         <button id="randomKey" className="form__button" onClick={handleSignUp}>
           Subscribe to monthly newsletter

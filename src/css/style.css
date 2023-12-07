@@ -183,4 +183,8 @@ h6 {
 }
 .form .form__button:active {
   background: linear-gradient(45deg, hsl(4, 84%, 59%) 90%, hsl(4, 100%, 67%));
+}
+.form .form__error {
+  border-color: hsl(4, 100%, 67%);
+  background-color: hsla(4, 100%, 67%, 0.3);
 }/*# sourceMappingURL=style.css.map */

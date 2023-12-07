@@ -34,4 +34,8 @@
       background: $color-Linear-Gradient-active-900;
     }
   }
+  .form__error {
+    border-color: $color-Primary-900;
+    background-color: $color-Primary-900-1;
+  }
 }
