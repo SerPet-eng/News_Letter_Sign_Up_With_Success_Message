@@ -1,11 +1,18 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SignUp from './components/SignUp';
+import Success from './components/Success';
 import Footer from './components/Footer';
 
 export default function App() {
   return (
     <>
-      <SignUp />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/" element={<SignUp />} />
+          <Route path="/success" element={<Success />} />
+        </Routes>
+        <Footer />
+      </Router>
     </>
   );
 }
