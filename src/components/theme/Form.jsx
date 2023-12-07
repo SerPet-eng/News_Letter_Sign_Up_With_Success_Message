@@ -12,7 +12,7 @@ export default function Form() {
       navigate('/success');
       setError(null);
     } else {
-      setError('Empty/Invalid Email!');
+      setError('Valid email required');
     }
   };
 

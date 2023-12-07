@@ -154,10 +154,18 @@ h6 {
   gap: 0.9rem;
   padding: 1rem;
 }
+.form .form__placeholder {
+  display: flex;
+}
+.form .form__placeholder .error {
+  color: hsl(4, 100%, 67%);
+  font-weight: 700;
+}
 .form .form__title {
   font-size: 0.75rem;
   font-weight: 700;
   font-family: "Roboto_Bold";
+  margin-right: auto;
 }
 .form .form__input {
   padding: 1rem;
@@ -187,4 +195,10 @@ h6 {
 .form .form__error {
   border-color: hsl(4, 100%, 67%);
   background-color: hsla(4, 100%, 67%, 0.3);
+}
+.form .form__error::-moz-placeholder {
+  color: hsl(4, 100%, 67%);
+}
+.form .form__error::placeholder {
+  color: hsl(4, 100%, 67%);
 }/*# sourceMappingURL=style.css.map */
