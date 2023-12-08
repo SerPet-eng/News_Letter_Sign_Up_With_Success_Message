@@ -251,6 +251,9 @@ h6 {
     margin-bottom: 10%;
   }
 }
+.success .success__content .success__section .success__description .email {
+  font-weight: 700;
+}
 .success .success__content .success__section .success__button {
   padding: 1rem;
   border-radius: 0.5rem;

@@ -16,8 +16,9 @@ export default function Success() {
           <div className="success__section">
             <h1 className="success__title">Thanks for subscribing!</h1>
             <p className="success__description">
-              A confirmation email has been sent to ash@loremcompany.com. Please
-              open it and click the button inside to confirm your subscription.
+              A confirmation email has been sent to{' '}
+              <span className="email">ash@loremcompany.com</span>. Please open
+              it and click the button inside to confirm your subscription.
             </p>
             <button onClick={handleButton} className="success__button">
               Dismiss message

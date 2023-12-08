@@ -26,6 +26,9 @@
         @media screen and (min-width: $screen-desktop) {
           margin-bottom: 10%;
         }
+        .email {
+          font-weight: $fontWeight-700;
+        }
       }
 
       .success__button {
