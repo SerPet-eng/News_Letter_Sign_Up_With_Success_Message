@@ -1,7 +1,6 @@
 @use '../variables/variable.scss' as *;
 
 .app {
-  $screen-desktop: 500px;
   display: flex;
   flex-direction: column;
   .app__content {

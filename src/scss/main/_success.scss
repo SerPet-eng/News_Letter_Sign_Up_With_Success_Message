@@ -5,6 +5,9 @@
   justify-content: space-between;
   .success__content {
     padding: 1rem;
+    @media screen and (min-width: $screen-desktop) {
+      max-width: 400px;
+    }
     .success__section {
       display: flex;
       flex-direction: column;
@@ -17,6 +20,9 @@
       }
       .success__description {
         margin-bottom: 50%;
+        @media screen and (min-width: $screen-desktop) {
+          margin-bottom: 10%;
+        }
       }
 
       .success__button {

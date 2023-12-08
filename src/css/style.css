@@ -222,6 +222,11 @@ h6 {
 .success .success__content {
   padding: 1rem;
 }
+@media screen and (min-width: 500px) {
+  .success .success__content {
+    max-width: 400px;
+  }
+}
 .success .success__content .success__section {
   display: flex;
   flex-direction: column;
@@ -235,6 +240,11 @@ h6 {
 }
 .success .success__content .success__section .success__description {
   margin-bottom: 50%;
+}
+@media screen and (min-width: 500px) {
+  .success .success__content .success__section .success__description {
+    margin-bottom: 10%;
+  }
 }
 .success .success__content .success__section .success__button {
   padding: 1rem;
