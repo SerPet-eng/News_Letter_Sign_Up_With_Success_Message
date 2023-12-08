@@ -19,6 +19,11 @@ body {
   min-height: 100vh;
   place-content: center;
 }
+@media screen and (min-width: 500px) {
+  body {
+    background-color: hsl(235, 18%, 26%);
+  }
+}
 
 /** ----- COLORS ----- **/
 /** ----- FONT_FAMILY ----- **/
@@ -58,6 +63,10 @@ body {
   .app {
     flex-direction: row-reverse;
     margin: 1rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    padding: 1rem;
+    background-color: hsl(0, 0%, 100%);
   }
 }
 
@@ -218,6 +227,13 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 2rem;
+  background-color: hsl(0, 0%, 100%);
+}
+@media screen and (min-width: 500px) {
+  .success {
+    padding: 2rem;
+  }
 }
 .success .success__content {
   padding: 1rem;

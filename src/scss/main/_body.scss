@@ -10,4 +10,7 @@ body {
   display: grid;
   min-height: 100vh;
   place-content: center;
+  @media screen and (min-width: 500px) {
+    background-color: $color-Neutral-700;
+  }
 }

@@ -8,12 +8,17 @@ export default function Form() {
 
   const handleSignUp = (e) => {
     e.preventDefault();
-    if (value) {
+    if (isEmail(value)) {
       navigate('/success');
       setError(null);
     } else {
       setError('Valid email required');
     }
+  };
+
+  const isEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
   };
 
   return (
