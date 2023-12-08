@@ -201,4 +201,29 @@ h6 {
 }
 .form .form__error::placeholder {
   color: hsl(4, 100%, 67%);
+}
+
+/** ----- COLORS ----- **/
+/** ----- FONT_FAMILY ----- **/
+@font-face {
+  font-family: "Roboto_Bold";
+  src: url("../../assets/fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto_Regular";
+  src: url("../../assets/fonts/Roboto-Regular.ttf");
+}
+/** ----- FONT_WEIGHT ----- **/
+.success {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+}
+.success .success__content {
+  padding: 1rem;
+}
+.success .success__content .success__section .success__title {
+  margin: 1rem 1rem 1rem 0;
+  font-size: 2rem;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */

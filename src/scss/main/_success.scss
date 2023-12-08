@@ -1,0 +1,16 @@
+@use '../variables/variable.scss' as *;
+.success {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  .success__content {
+    padding: 1rem;
+    .success__section {
+      .success__title {
+        margin: 1rem 1rem 1rem 0;
+        font-size: 2rem;
+        font-weight: $fontWeight-700;
+      }
+    }
+  }
+}

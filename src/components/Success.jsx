@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import Image from '../../assets/images/icon-success.svg';
 
 export default function Success() {
   const navigate = useNavigate();
@@ -9,14 +10,21 @@ export default function Success() {
 
   return (
     <>
-      <div>
-        <h1>Thanks for subscribing!</h1>
-        <p>
-          A confirmation email has been sent to ash@loremcompany.com. Please
-          open it and click the button inside to confirm your subscription.
-        </p>
-        <button onClick={handleButton}>Dismiss message</button>
-      </div>
+      <section className="success">
+        <div className="success__content">
+          <img src={Image} alt="Success Icon" className="success__image" />
+          <div className="success__section">
+            <h1 className="success__title">Thanks for subscribing!</h1>
+            <p>
+              A confirmation email has been sent to ash@loremcompany.com. Please
+              open it and click the button inside to confirm your subscription.
+            </p>
+            <button onClick={handleButton} className="success__button">
+              Dismiss message
+            </button>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
