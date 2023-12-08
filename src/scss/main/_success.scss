@@ -1,15 +1,43 @@
 @use '../variables/variable.scss' as *;
 .success {
-  display: grid;
-  min-height: 100vh;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   .success__content {
     padding: 1rem;
     .success__section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       .success__title {
         margin: 1rem 1rem 1rem 0;
         font-size: 2rem;
         font-weight: $fontWeight-700;
+        line-height: 2rem;
+      }
+      .success__description {
+        margin-bottom: 50%;
+      }
+
+      .success__button {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: none;
+        background: $color-Neutral-900;
+        font-family: $fontFamily_Bold;
+        font-weight: $fontWeight-700;
+        color: $color-Neutral-100;
+        transition: box-shadow 0.3s ease-in-out;
+        &:hover {
+          cursor: pointer;
+          box-shadow: $color-Hover-900;
+        }
+        &:focus {
+          box-shadow: $color-Hover-900;
+        }
+        &:active {
+          background: $color-Linear-Gradient-active-900;
+        }
       }
     }
   }

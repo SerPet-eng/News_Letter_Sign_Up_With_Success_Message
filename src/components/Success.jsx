@@ -15,7 +15,7 @@ export default function Success() {
           <img src={Image} alt="Success Icon" className="success__image" />
           <div className="success__section">
             <h1 className="success__title">Thanks for subscribing!</h1>
-            <p>
+            <p className="success__description">
               A confirmation email has been sent to ash@loremcompany.com. Please
               open it and click the button inside to confirm your subscription.
             </p>

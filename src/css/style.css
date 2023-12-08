@@ -215,15 +215,44 @@ h6 {
 }
 /** ----- FONT_WEIGHT ----- **/
 .success {
-  display: grid;
-  min-height: 100vh;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .success .success__content {
   padding: 1rem;
+}
+.success .success__content .success__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .success .success__content .success__section .success__title {
   margin: 1rem 1rem 1rem 0;
   font-size: 2rem;
   font-weight: 700;
+  line-height: 2rem;
+}
+.success .success__content .success__section .success__description {
+  margin-bottom: 50%;
+}
+.success .success__content .success__section .success__button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: hsl(234, 29%, 20%);
+  font-family: "Roboto_Bold";
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.success .success__content .success__section .success__button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px 5px hsl(231, 7%, 60%);
+}
+.success .success__content .success__section .success__button:focus {
+  box-shadow: 0 0 5px 5px hsl(231, 7%, 60%);
+}
+.success .success__content .success__section .success__button:active {
+  background: linear-gradient(45deg, hsl(4, 84%, 59%) 90%, hsl(4, 100%, 67%));
 }/*# sourceMappingURL=style.css.map */
