@@ -236,7 +236,12 @@ h6 {
   margin: 1rem 1rem 1rem 0;
   font-size: 2rem;
   font-weight: 700;
-  line-height: 2rem;
+  line-height: 90%;
+}
+@media screen and (min-width: 500px) {
+  .success .success__content .success__section .success__title {
+    font-size: 3.5rem;
+  }
 }
 .success .success__content .success__section .success__description {
   margin-bottom: 50%;
