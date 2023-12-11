@@ -1,6 +1,6 @@
 # Frontend Mentor - Newsletter sign-up form with success message solution
 
-This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -15,8 +15,6 @@ This is a solution to the [Newsletter sign-up form with success message challeng
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -34,15 +32,69 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+#### Desktop Mode:
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![News Letter Desktop](./assets/screenshots/News_Letter_Desktop.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+- ##### Button
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+1. ###### Focus/Hover:
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+   ![News Letter Desktop Button Focus/Hover](./assets/screenshots/News_Letter_Hover.png)
+
+2. ###### Active:
+
+   ![News Letter Desktop Button Active](./assets/screenshots/News_Letter_Active.png)
+
+- ##### Status:
+
+1. ###### Error
+
+   ![News Letter Desktop Error](./assets/screenshots/News_Letter_Error.png)
+
+2. ###### Success:
+   ![News Letter Desktop Success](./assets/screenshots/News_Letter_Success_Desktop.png)
+
+- ##### Effects:
+
+  1. ###### Focus/Hover
+
+     ![News Letter Desktop Success Focus/Hover](./assets/screenshots/News_Letter_Success_Desktop_Hover.png)
+
+  2. ###### Desktop Success Active:
+     ![News Letter Desktop Success Focus/Hover](./assets/screenshots/News_Letter_Success_Desktop_Active.png)
+
+#### Mobile Mode:
+
+![News Letter Mobile](./assets/screenshots/News_Letter_Mobile.png)
+
+- ##### Button
+
+<!-- 1. ###### Focus/Hover:
+
+   ![News Letter Mobile Button Focus/Hover](./assets/screenshots/News_Letter_Hover.png) -->
+
+2. ###### Active:
+
+   ![News Letter Mobile Button Active](./assets/screenshots/News_Letter_Mobile_Active.png)
+
+- ##### Status:
+
+1. ###### Error
+
+   ![News Letter Mobile Error](./assets/screenshots/News_Letter_Mobile_Error.png)
+
+2. ###### Success:
+   ![News Letter Mobile Success](./assets/screenshots/News_Letter_Mobile_Success.png)
+
+- ##### Effects:
+
+  <!-- 1. ###### Focus/Hover
+
+     ![News Letter Mobile Success Focus/Hover](./assets/screenshots/News_Letter_Success_Mobile_Hover.png) -->
+
+  2. ###### Mobile Success Active:
+     ![News Letter Mobile Success Focus/Hover](./assets/screenshots/News_Letter_Mobile_Success_Active.png)
 
 ### Links
 
@@ -73,15 +125,17 @@ To see how you can add code snippets, see below:
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
+
 ```css
 .proud-of-this-css {
   color: papayawhip;
 }
 ```
+
 ```js
 const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+  console.log('🎉');
+};
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
