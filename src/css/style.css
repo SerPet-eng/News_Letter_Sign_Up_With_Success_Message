@@ -67,6 +67,7 @@ body {
     overflow: hidden;
     padding: 1rem;
     background-color: hsl(0, 0%, 100%);
+    max-width: 800px;
   }
 }
 
