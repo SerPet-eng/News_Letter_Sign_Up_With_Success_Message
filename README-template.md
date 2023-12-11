@@ -102,8 +102,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/SerPet-eng/News_Letter_Sign_Up_With_Success_Message)
+- Live Site URL: [Netlify](https://inquisitive-otter-5f8f77.netlify.app/)
 
 ## My process
 
@@ -216,7 +216,7 @@ $screen-desktop: 500px;
 
 ## Author
 
-- Website - [Netlify - Fate]()
+- Website - [Netlify - Fate](https://inquisitive-otter-5f8f77.netlify.app/)
 - Frontend Mentor - [@SerPet-eng](https://www.frontendmentor.io/profile/SerPet-eng)
 - Twitter - [@dchristian796](https://twitter.com/dchristian796)
 
