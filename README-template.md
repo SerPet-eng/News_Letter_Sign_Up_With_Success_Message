@@ -16,6 +16,8 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
+---
+
 ## Overview
 
 ### The challenge
@@ -29,6 +31,8 @@ Users should be able to:
   - The email address is not formatted correctly
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
+
+---
 
 ### Screenshot
 
@@ -106,65 +110,116 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SASS Variables
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [React Router 6](https://reactrouter.com/en/main) - React Routing Library
+- [SASS](https://sass-lang.com/) - SASS Preprocessor
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+---
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+The major thing I've learn from this challenge is the use of **React Router 6** in this project. I took my time to learn the basics and fundamentals of it and I get the gist of it.
 
-To see how you can add code snippets, see below:
+```jsx
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import SignUp from './components/SignUp';
+import Success from './components/Success';
+import Footer from './components/Footer';
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
+export default function App() {
+  return (
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<SignUp />} />
+          <Route path="/success" element={<Success />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </>
+  );
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉');
+**AND THIS ONE AS WELL**
+
+```jsx
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+export default function Form() {
+  const [value, setValue] = useState('');
+  const [error, setError] = useState(null);
+  const navigate = useNavigate();
+
+  // other codes...
+}
+```
+
+> This `useNavigate` really do the trick when routing a component like in this challenge (`Success.jsx`).
+
+```jsx
+const handleSignUp = (e) => {
+  e.preventDefault();
+  if (isEmail(value)) {
+    navigate('/success');
+    setError(null);
+  } else {
+    setError('Valid email required');
+  }
+};
+
+const isEmail = (email) => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
 };
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+> The _first_ function `handleSignup()` which has a condition that check if the `value` is an "email". The _second_ function where the **input form** will check if the value is an "email"
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+**From style.scss**
 
-### Continued development
+```scss
+@import './main/body';
+@import './main/content';
+@import './main/footer';
+@import './main/reset';
+@import './main/form';
+@import './main/success';
+```
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+> After watching some tutorial video on YouTube, I learn that using `@import` to use variables in a different file is 'must not to do'. This is where the `variable.scss`.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+**From variable.scss**
+
+```scss
+@forward './colors';
+@forward './font-family';
+@forward './font-weight';
+
+$screen-desktop: 500px;
+```
+
+> This make using variable have some control, because according to the documents and the video tutorial that I've watched, it said that using **_@use_** or **_@forward_** allows you to **_allias_** modules providing _better control_ over the names of imported items.
+
+---
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Kevin Powell's video about @use and @forward](https://www.youtube.com/watch?v=CR-a8upNjJ0&pp=ygURa2V2aW4gcG93ZWxsIEB1c2U%3D) - This tutorial video by [Kevin Powell](https://www.youtube.com/@KevinPowell) really helps me to understand this two concept of SASS, the `_**@use**_` and `_**@forward**_`
+- [W3school](https://www.w3schools.com) - This website really helps me to refresh some concept of a code that I've forgotten
+- [MDN Docs](https://developer.mozilla.org/zh-CN/) - Also this website helps when I need a further understand of said concept.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Netlify - Fate]()
+- Frontend Mentor - [@SerPet-eng](https://www.frontendmentor.io/profile/SerPet-eng)
+- Twitter - [@dchristian796](https://twitter.com/dchristian796)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I want to acknowledge my family and friends for supporting me and for my specific inspiration in terms of Frontend Developing. First of [Hattori Hanzo](https://www.facebook.com/areyes2022) and [Kevin Powell](https://www.youtube.com/@KevinPowell). Also to God himself. Oneself will forever be grateful for everyday blessing.
