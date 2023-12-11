@@ -12,7 +12,6 @@
       font-weight: $fontWeight-700;
       font-family: $fontFamily_Bold;
     }
-
     .app__description {
       display: flex;
       flex-direction: column;
@@ -23,9 +22,6 @@
         padding-left: 0.5rem;
       }
     }
-    // @media screen and (min-width: $screen-desktop) {
-    //   grid-template-columns: 1fr 1fr;
-    // }
   }
   @media screen and (min-width: $screen-desktop) {
     flex-direction: row-reverse;
