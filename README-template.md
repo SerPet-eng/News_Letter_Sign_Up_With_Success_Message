@@ -7,6 +7,20 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+  - [Desktop Mode](#desktop-mode)
+    - [Button](#button)
+      - [Focus/Hover](#focushover)
+      - [Active](#active)
+    - [Status](#status)
+      - [Error](#error)
+      - [Success](#success)
+  - [Desktop Mode](#desktop-mode)
+    - [Button](#button-1)
+      - [Focus/Hover](#focushover-1)
+      - [Active](#active-1)
+    - [Status](#status-1)
+      - [Error](#error-1)
+      - [Success](#success-1)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -59,24 +73,15 @@ Users should be able to:
 2. ###### Success:
    ![News Letter Desktop Success](./assets/screenshots/News_Letter_Success_Desktop.png)
 
-- ##### Effects:
-
-  1. ###### Focus/Hover
-
-     ![News Letter Desktop Success Focus/Hover](./assets/screenshots/News_Letter_Success_Desktop_Hover.png)
-
-  2. ###### Desktop Success Active:
-     ![News Letter Desktop Success Focus/Hover](./assets/screenshots/News_Letter_Success_Desktop_Active.png)
-
 #### Mobile Mode:
 
 ![News Letter Mobile](./assets/screenshots/News_Letter_Mobile.png)
 
 - ##### Button
 
-<!-- 1. ###### Focus/Hover:
+1. ###### Focus/Hover:
 
-   ![News Letter Mobile Button Focus/Hover](./assets/screenshots/News_Letter_Hover.png) -->
+   ![News Letter Mobile Button Focus/Hover](./assets/screenshots/News_Letter_Mobile_Button_Focus.png)
 
 2. ###### Active:
 
@@ -90,15 +95,6 @@ Users should be able to:
 
 2. ###### Success:
    ![News Letter Mobile Success](./assets/screenshots/News_Letter_Mobile_Success.png)
-
-- ##### Effects:
-
-  <!-- 1. ###### Focus/Hover
-
-     ![News Letter Mobile Success Focus/Hover](./assets/screenshots/News_Letter_Success_Mobile_Hover.png) -->
-
-  2. ###### Mobile Success Active:
-     ![News Letter Mobile Success Focus/Hover](./assets/screenshots/News_Letter_Mobile_Success_Active.png)
 
 ### Links
 
