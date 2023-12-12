@@ -71,12 +71,35 @@ body {
   }
 }
 
+/** ----- COLORS ----- **/
+/** ----- FONT_FAMILY ----- **/
+@font-face {
+  font-family: "Roboto_Bold";
+  src: url("../../assets/fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto_Regular";
+  src: url("../../assets/fonts/Roboto-Regular.ttf");
+}
+/** ----- FONT_WEIGHT ----- **/
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (min-width: 500px) {
+  .attribution a:hover {
+    text-shadow: 0 0 1px 1px hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+  }
+}
+@media screen and (min-width: 500px) {
+  .attribution {
+    color: hsl(0, 0%, 100%);
+  }
 }
 
 /*

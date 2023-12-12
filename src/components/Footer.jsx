@@ -3,14 +3,15 @@ export default function Footer() {
     <>
       <footer className="attribution">
         <small>
+          Challenge by{' '}
           <a
             href="https://www.frontendmentor.io?ref=challenge"
             target="_blank"
             rel="noreferrer"
           >
             Frontend Mentor
-          </a>{' '}
-          Challenge by . Coded by{' '}
+          </a>
+          . Coded by{' '}
           <a
             href="https://www.frontendmentor.io/profile/SerPet-eng"
             target="_blank"
