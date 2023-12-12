@@ -10,7 +10,15 @@ export default function Footer() {
           >
             Frontend Mentor
           </a>{' '}
-          Challenge by . Coded by <a href="#">Your Name Here</a>.
+          Challenge by . Coded by{' '}
+          <a
+            href="https://www.frontendmentor.io/profile/SerPet-eng"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Christian U. De Guzman
+          </a>
+          .
         </small>
       </footer>
     </>
